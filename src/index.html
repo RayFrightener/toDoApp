@@ -10,29 +10,34 @@
 <!--  This form includes fields for the title,
    due date, priority (using radio buttons), 
    and an optional description. -->
-    <form id="toDoForm">
-        <label for="taskTitle">Title:</label>
-        <input type="text" id="taskTitle" name="taskTitle" required>
-
-        <label for="dueDate">Due Date:</label>
-        <input type="date" id="dueDate" name="dueDate" required>
-
-        <fieldset>
-            <legend>Priority:</legend>
-            <label>
-                <input type="radio" name="priority" value="low" required> Low
-            </label>
-            <label>
-                <input type="radio" name="priority" value="medium" required> Medium
-            </label>
-            <label type="radio" name="priority" value="high"> High
-            </label>
-        </fieldset>
+    <div class="container">
+        <form id="toDoForm">
+            <label for="taskTitle">Title:</label>
+            <input type="text" id="taskTitle" name="taskTitle" required>
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+            <fieldset>
+                <legend>Priority:</legend>
+                <label>
+                    <input type="radio" name="priority" value="low" required> Low
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="medium" required> Medium
+                </label>
+                <label type="radio" name="priority" value="high"> High
+                </label>
+            </fieldset>
         
-        <label for="taskDescription">Description: (optional):</label>
-        <textarea id="taskDescription" name="taskDescription" rows="4"></textarea>
+            <label for="taskDescription">Description: (optional):</label>
+            <textarea id="taskDescription" name="taskDescription" rows="4"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
 
-        <button type="submit">Add Task</button>
-    </form>
+        <div id="toDoList">
+            <h2>To Do List</h2>
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+
 </body>
 </html>
