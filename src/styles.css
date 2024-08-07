@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+fieldset {
+    margin-top: 10px;
+}
+legend {
+    font-weight: bold;
+}
