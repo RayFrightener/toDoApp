@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+<!--  This form includes fields for the title,
+   due date, priority (using radio buttons), 
+   and an optional description. -->
+    <form id="toDoForm">
+        <label for="taskTitle">Title:</label>
+        <input type="text" id="taskTitle" name="tastTitle" required>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+
+        <fieldset>
+            <legend>Priority:</legend>
+            <label>
+                <input type="radio" name="priority" value="low" required> Low
+            </label>
+            <label>
+                <input type="radio" name="priority" value="medium" required> Medium
+            </label>
+            <label type="radio" name="priority" value="high"> High
+            </label>
+        </fieldset>
+        
+        <label for="taskDescription">Description: (optional):</label>
+        <textarea id="taskDescription" name="taskDescription" row="4"></textarea>
+
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>
