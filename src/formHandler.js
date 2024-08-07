@@ -12,6 +12,15 @@ export function handleFormSubmission(event) {
     <p>${taskDescription}</p>
     `;
 
+    const delButton = document.createElement('button');
+    delButton.textContent = 'del';
+
+    delButton.addEventListener('click', function() {
+        taskItem.remove();
+    })
+
+    taskItem.appendChild(delButton);
+
     document.getElementById('tasks').appendChild(taskItem);
 
     document.getElementById('toDoForm').reset();
