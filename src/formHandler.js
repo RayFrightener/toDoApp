@@ -8,7 +8,7 @@ export function handleFormSubmission(event) {
 
     const taskItem = document.createElement('li');
     taskItem.innerHTML = `
-    <strong>${taskTitle}</strong> - ${dueDate} -${priority}
+    <strong>${taskTitle}</strong> - ${dueDate} - ${priority}
     <p>${taskDescription}</p>
     `;
 

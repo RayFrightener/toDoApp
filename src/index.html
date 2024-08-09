@@ -4,41 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
-    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 <!--  This form includes fields for the title,
    due date, priority (using radio buttons), 
    and an optional description. -->
     <div class="container">
-        <form id="toDoForm">
-            <label for="taskTitle">Title:</label>
-            <input type="text" id="taskTitle" name="taskTitle" required><br>
-            <label for="dueDate">Due Date:</label>
-            <input type="date" id="dueDate" name="dueDate" required>
-            <fieldset>
-                <legend>Priority:</legend>
-                <label>
-                    <input type="radio" name="priority" value="low" required> Low
-                </label>
-                <label>
-                    <input type="radio" name="priority" value="medium" required> Medium
-                </label>
-                <label>
-                    <input type="radio" name="priority" value="high" required> High
-                </label>
-            </fieldset>
-        
-            <label for="taskDescription">Description: (optional):</label>
-            <textarea id="taskDescription" name="taskDescription" rows="2"></textarea>
-            <button type="submit">Add Task</button>
-        </form>
+        <div id="projectList">Projects</div>
+        <div id="toDoForm">
+            <form>
+                <label for="taskTitle">Title:</label>
+                <input type="text" id="taskTitle" name="taskTitle" required><br>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+                <fieldset>
+                    <legend>Priority:</legend>
+                    <label>
+                        <input type="radio" name="priority" value="low" required> Low
+                    </label>
+                    <label>
+                        <input type="radio" name="priority" value="medium" required> Medium
+                    </label>
+                    <label>
+                        <input type="radio" name="priority" value="high" required> High
+                    </label>
+                </fieldset>
+            
+                <label for="taskDescription">Description: (optional):</label>
+                <textarea id="taskDescription" name="taskDescription" rows="2"></textarea> <br>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
 
         <div id="toDoList">
             <h2>To Do List</h2>
             <ul id="tasks"></ul>
         </div>
-    </div>
 
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
