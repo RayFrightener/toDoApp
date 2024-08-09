@@ -3,8 +3,16 @@ export function handleFormSubmission(event) {
 
     const taskTitle = document.getElementById('taskTitle').value;
     const dueDate = document.getElementById('dueDate').value;
-    const priority = document.querySelector('input[name="priority"]:checked').value;
+    const priorityElement = document.querySelector('input[name="priority"]:checked');
     const taskDescription = document.getElementById('taskDescription').value;
+
+    if (!priorityElement) {
+        console.error('Priority element is not selected');
+        return;
+    }
+
+    const priority = priorityElement.value;
+
 
     const taskItem = document.createElement('li');
     taskItem.innerHTML = `

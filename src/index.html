@@ -11,8 +11,8 @@
    and an optional description. -->
     <div class="container">
         <div id="projectList">Projects</div>
-        <div id="toDoForm">
-            <form>
+
+            <form id="toDoForm">
                 <label for="taskTitle">Title:</label>
                 <input type="text" id="taskTitle" name="taskTitle" required><br>
                 <label for="dueDate">Due Date:</label>
@@ -34,7 +34,6 @@
                 <textarea id="taskDescription" name="taskDescription" rows="2"></textarea> <br>
                 <button type="submit">Add Task</button>
             </form>
-        </div>
 
         <div id="toDoList">
             <h2>To Do List</h2>
@@ -42,6 +41,6 @@
         </div>
 
     </div>
-    <script src="index.js"></script>
+    <script src="../dist/main.js"></script>
 </body>
 </html>
